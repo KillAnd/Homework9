@@ -33,5 +33,18 @@ public class Main {
         System.out.println("Минимальная сумма трат за неделю составила " +minMoneyWeek+ " рублей. " +
                 "Максимальная сумма трат за неделю составила " +maxMoneyWeek+ " рублей.");
 
+        //Task 3
+        System.out.println("Task 3");
+        int [] newMas = {235000,86000,167899,233338,112334};
+        int sumTwo = 0;
+        for (int i : newMas) {
+            sumTwo+=i;
+        }
+        int mediumIndex = sumTwo/newMas.length;
+        System.out.println("Средняя сумма трат за месяц составила "+mediumIndex+" рублей.");
+
+
+
+
     }
 }

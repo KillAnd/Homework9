@@ -43,7 +43,17 @@ public class Main {
         int mediumIndex = sumTwo/newMas.length;
         System.out.println("Средняя сумма трат за месяц составила "+mediumIndex+" рублей.");
 
-
+        //Task 4
+        System.out.println("Task 4");
+        char [] name = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = 0; i < name.length/2; i++) {
+            char nameSec = name[i];
+            name[i]=name[name.length-i-1];
+            name[name.length-i-1]=nameSec;
+        }
+        for (int i = 0; i < name.length; i++) {
+            System.out.print(name[i]);
+        }
 
 
     }

@@ -16,7 +16,22 @@ public class Main {
         }
         System.out.println("Сумма трат в месяц составила " + sum + " рублей.");
 
-
+        //Task 2
+        System.out.println("Task 2");
+        int maxMoneyWeek = 0;
+        for (final int i : moneyWeek) {
+            if (i>maxMoneyWeek) {
+                maxMoneyWeek = i;
+            }
+        }
+        int minMoneyWeek = maxMoneyWeek;
+        for (final int i : moneyWeek) {
+            if (i<minMoneyWeek) {
+                minMoneyWeek = i;
+            }
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " +minMoneyWeek+ " рублей. " +
+                "Максимальная сумма трат за неделю составила " +maxMoneyWeek+ " рублей.");
 
     }
 }
